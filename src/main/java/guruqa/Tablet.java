@@ -7,6 +7,14 @@ public class Tablet {
     private double screenDiagonal;
     private int price;
 
+    @Override
+    public String toString() {
+        return "Характеристики планшета:" + nameTablet + "\n"
+                + operatingSystemTablet + "\n"
+                + screenDiagonal + "\n"
+                + price + "руб." + "\n";
+    }
+
     public String getNameTablet() {
         return nameTablet;
     }
@@ -37,14 +45,6 @@ public class Tablet {
 
     public void setPrice(int price) {
         this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "Характеристики планшета:" + nameTablet + "\n"
-                + operatingSystemTablet + "\n"
-                + screenDiagonal + "\n"
-                + price + "руб."+ "\n";
     }
 
 }

@@ -5,11 +5,16 @@ public class Notebook {
     private int idNotebook;
     private String name;
 
+    @Override
+    public String toString() {
+        return "Ноутбук" + "\t" + idNotebook + " " + name;
+
+    }
+
     public Notebook() {
 
         this.idNotebook = 123;
         this.name = "Lenovo";
-
     }
 
     public int getIdNotebook() {
@@ -20,10 +25,5 @@ public class Notebook {
         return name;
     }
 
-    @Override
-    public String toString() {
-        return "Ноутбук" + "\t" + idNotebook + " " + name;
-
-    }
 }
 
