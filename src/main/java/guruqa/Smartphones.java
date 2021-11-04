@@ -14,11 +14,28 @@ public class Smartphones {
                 + operatingSystem + "\n"
                 + "5G" + "\t" + thereIs5G + "\n"
                 + memorySize + "ГБ" + "\n"
-                + price + "руб."+"\n";
+                + price + "руб." + "\n";
     }
 
+    public void outputOfInfoFromCatalog() {
+        if (name == null) {
+            System.out.println("В каталоге нет данного товара!\n");
+        } else {
+            System.out.println(this);
+        }
+    }
+
+
     public void setName(String name) {
-        this.name = name;
+        if ("Nokia".equals(name)) {
+            System.out.println("Мы не продаём Nokia");
+        } else {
+            this.name = name;
+        }
+    }
+
+    public void sendSms(String textSms) {
+        System.out.println("Отправленное смс с телефона:" + name + "\n" + textSms);
     }
 
     public void setOperatingSystem(String operatingSystem) {

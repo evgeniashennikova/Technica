@@ -7,7 +7,7 @@ public class Notebook {
 
     @Override
     public String toString() {
-        return "Ноутбук" + "\t" + idNotebook + " " + name;
+        return "Ноутбук" + "\t" + idNotebook + " " + name + "\n";
 
     }
 

@@ -24,12 +24,23 @@ public class Catalog {
         iPad.setScreenDiagonal(10.9);
         iPad.setPrice(53000);
 
-        System.out.println(samsung);
-        System.out.println(apple);
+        samsung.outputOfInfoFromCatalog();
+        apple.outputOfInfoFromCatalog();
         System.out.println(iPad);
 
         Notebook lenovo = new Notebook();
         System.out.println(lenovo);
+
+        samsung.setPrice(55000);
+        System.out.println("Стоимость смартфона" + "\t" + samsung.getName() +
+                        " со скидкой:" + samsung.getPrice() + "руб." + "\n");
+
+        Smartphones nokia = new Smartphones();
+        nokia.setName("Nokia");
+        nokia.outputOfInfoFromCatalog();
+
+        samsung.sendSms("Как дела?");
+        apple.sendSms("Хорошо!");
 
     }
 }
